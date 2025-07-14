@@ -35,3 +35,7 @@ The **principal** must be positive and the **loanTerm** must be an integer betwe
 ### Routine abstraction and reusability
 "monthlyInstallment()" encapsulates the logic for calculating the monthly payment, ensuring the formula is defined in a reusable method.
 
+### Main() method
+The main() method, in the prototype phase, serves as a serves as a simple command-line interface that allows users to interact with the MortgageLoan class. 
+
+That being said, it prompts the user to enter the loan principal amount and the term in months, then creates a MortgageLoan object using these inputs. With this data, it is possible to calculate and output the monthly installment.
