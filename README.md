@@ -1,1 +1,20 @@
 # Exercise-3---Advanced-OOP---Univeristy-of-Turku
+
+## 1. Student ID
+Student ID: 2406530
+
+## 2. Exercise
+The Duckburg Bank has commissioned you to specify a program that calculates the monthly installment of the mortgage repayment for customers, when the customer provides the principal amount (i.e., the amount the customer receives as a loan) and the loan term (in months, allowed range 0-300). For simplicity, it is agreed that the monthly installment is calculated using the formula:
+
+monthly_installment = principal / loan_term + principal / 240
+
+ 
+
+Task: Design a well-justified structure for the program using Java routines (methods). The goal is to take advantage of routine abstraction, such as reusability. The program is intended to be a web version later, but the current prototype would ask for information from the user via the command line.
+
+In the specification, describe the routine terms and conditions and their purposes. Also, consider special situations. If you find the task suitable for object-oriented programming, you can also model the task based on classes instead of routines.
+
+You may also implement the program if you wish, but just the specification is sufficient. (If you absolutely want a challenge, you can optionally calculate the monthly installment precisely using the 12-month Euribor rate, applying the annuity principle. The bank's margin would be a reasonable 1.0%. The task ignores other potential bank charges for loan management and other customer-related responsibilities.)
+
+## 3. Specifications
+### Purpose
