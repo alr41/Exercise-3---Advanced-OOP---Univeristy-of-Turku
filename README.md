@@ -8,8 +8,6 @@ The Duckburg Bank has commissioned you to specify a program that calculates the 
 
 monthly_installment = principal / loan_term + principal / 240
 
- 
-
 Task: Design a well-justified structure for the program using Java routines (methods). The goal is to take advantage of routine abstraction, such as reusability. The program is intended to be a web version later, but the current prototype would ask for information from the user via the command line.
 
 In the specification, describe the routine terms and conditions and their purposes. Also, consider special situations. If you find the task suitable for object-oriented programming, you can also model the task based on classes instead of routines.
@@ -18,3 +16,22 @@ You may also implement the program if you wish, but just the specification is su
 
 ## 3. Specifications
 ### Purpose
+The **MortgageLoan** class models a mortgage payment scenario for Duckburg Bank. It encapsulates the loan data and provides a method to calculate the customer's monthly installment based the given formula. The class is designed with data validation, routine abstraction, and reusability in mind, making it suitable for both command-line use and future web-based implementations.
+
+### Class overview
+**Class name**: MortgageLoan.
+
+**Fields**: "double principal" (loan amount received by the customer) and "int loanTerm" (duration of the loan in months).
+
+**Constructor**: "MortgageLoan(double principal, int loanTerm)" initializes the object and enforces validity of inputs.
+
+**Method**: "double monthlyInstallment()" returns the monthly payment using the formula: monthly_installment = principal / loanTerm + principal / 240
+
+**Getters**: "getPrincipal()" and "getLoanTerm()" to access field values.
+
+### Data validation rules
+The **principal** must be positive and the **loanTerm** must be an integer between 1 and 300 (inclusive). If these conditions are violated, the IllegalArgumentException is thrown.
+
+### Routine abstraction and reusability
+"monthlyInstallment()" encapsulates the logic for calculating the monthly payment, ensuring the formula is defined in a reusable method.
+
